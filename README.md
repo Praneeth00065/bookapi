@@ -20,15 +20,15 @@ or (for development with auto-reload)
 npm run dev
 
 📌 API Endpoints
-Authentication
-Signup
+**Authentication**
+**Signup**
 
 curl -X POST http://localhost:5000/auth/signup -H "Content-Type: application/json" -d '{
     "name": "John Doe",
     "email": "john@example.com",
     "password": "password123"
 }'
-Login
+**Login**
 curl -X POST http://localhost:5000/auth/login -H "Content-Type: application/json" -d '{
     "email": "john@example.com",
     "password": "password123"
