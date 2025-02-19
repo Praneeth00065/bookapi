@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "4ed56db0-1180-4ecd-879b-80447988d5da",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26167790",
+		"_collection_link": "https://api-assignment-0131.postman.co/workspace/API-Assignment-Workspace~ffb794c3-2001-42a1-80f6-81a32ea7bc43/collection/26167790-4ed56db0-1180-4ecd-879b-80447988d5da?action=share&source=collection_link&creator=26167790"
+	},
+	"item": [
+		{
+			"name": "booksapi",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViMjkyMTFmODA4NTM0NzZmYWYyOCIsImlhdCI6MTczOTk2MTAwMywiZXhwIjoxNzM5OTY0NjAzfQ.5VrdaTwKomFYRbhbqmdupX4ttT-yGXGH_FV6x2GMaoA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"email\": \"niteshthapa@example.com\",\r\n  \"password\": \"securepassword\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List of books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViNDZlMTFmODA4NTM0NzZmYWYzMSIsImlhdCI6MTczOTk3MjAzNywiZXhwIjoxNzM5OTc1NjM3fQ.8lc4WOk5Q9XS5hmDm8HGExVGVZEo3McPOWdsulO85IY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch a book",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViNDZlMTFmODA4NTM0NzZmYWYzMSIsImlhdCI6MTczOTk3MjAzNywiZXhwIjoxNzM5OTc1NjM3fQ.8lc4WOk5Q9XS5hmDm8HGExVGVZEo3McPOWdsulO85IY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/books/67b58409228c9070c1f1d9ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books",
+								"67b58409228c9070c1f1d9ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViNDZlMTFmODA4NTM0NzZmYWYzMSIsImlhdCI6MTczOTk3MjAzNywiZXhwIjoxNzM5OTc1NjM3fQ.8lc4WOk5Q9XS5hmDm8HGExVGVZEo3McPOWdsulO85IY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Wings of fire\",\r\n    \"author\": \"J.R.R. Tolkien\",\r\n    \"publishedDate\": \"1995-09-21T00:00:00.000Z\",\r\n    \"genre\": \"Fantasy\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViNDZlMTFmODA4NTM0NzZmYWYzMSIsImlhdCI6MTczOTk3MjAzNywiZXhwIjoxNzM5OTc1NjM3fQ.8lc4WOk5Q9XS5hmDm8HGExVGVZEo3McPOWdsulO85IY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Wings of fire\",\r\n    \"author\": \"J.R.R. Tolkien\",\r\n    \"publishedDate\": \"1999-09-21T00:00:00.000Z\",\r\n    \"genre\": \"Fantasy\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/books/67b5decfae41d6a938e8a76b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books",
+								"67b5decfae41d6a938e8a76b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjViNDZlMTFmODA4NTM0NzZmYWYzMSIsImlhdCI6MTczOTk3MjAzNywiZXhwIjoxNzM5OTc1NjM3fQ.8lc4WOk5Q9XS5hmDm8HGExVGVZEo3McPOWdsulO85IY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Wings of fire\",\r\n    \"author\": \"J.R.R. Tolkien\",\r\n    \"publishedDate\": \"1999-09-21T00:00:00.000Z\",\r\n    \"genre\": \"Fantasy\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/books/67b5decfae41d6a938e8a76b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"books",
+								"67b5decfae41d6a938e8a76b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"Praneeth Konduru\",\r\n  \"email\": \"praneeth123@example.com\",\r\n  \"password\": \"securepassword\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
