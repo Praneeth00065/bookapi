@@ -4,7 +4,7 @@ This is a RESTful API for managing books, built with Node.js, Express, and Mongo
 
 ## 🚀 Setup Instructions
 
-### 1. Clone the Repository
+1. Clone the Repository
 ```sh
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
