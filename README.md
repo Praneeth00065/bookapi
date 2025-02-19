@@ -46,7 +46,7 @@ curl -X POST http://localhost:5000/books -H "Content-Type: application/json" -H 
 **📌 Postman Collection**
 Open Postman.
 Go to Collections > Import.
-Import the postman_collection.json (attached in the repo).
+Import the postman_booksapi_collection.json (attached in the repo).
 ✅ Now you can test the API in Postman! 
    
 
