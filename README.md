@@ -43,7 +43,11 @@ curl -X POST http://localhost:5000/books -H "Content-Type: application/json" -H 
     "author": "Paulo Coelho",
     "publishedYear": 1988
 }'
-
+**📌 Postman Collection**
+Open Postman.
+Go to Collections > Import.
+Import the postman_collection.json (attached in the repo).
+✅ Now you can test the API in Postman! 
    
 
 
