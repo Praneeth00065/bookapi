@@ -43,25 +43,15 @@ curl -X POST http://localhost:5000/auth/signup -H "Content-Type: application/jso
     "email": "john@example.com",
     "password": "password123"
 }'
-
-📌 API Endpoints
-**Authentication**
-**Signup**
-
-curl -X POST http://localhost:5000/auth/signup -H "Content-Type: application/json" -d '{
-    "name": "John Doe",
-    "email": "john@example.com",
-    "password": "password123"
-}'
-**Login**
+Login
 curl -X POST http://localhost:5000/auth/login -H "Content-Type: application/json" -d '{
     "email": "john@example.com",
     "password": "password123"
 }'
 Books
-**Get All Books**
+Get All Books
 curl -X GET http://localhost:5000/books -H "token: your_jwt_token"
-**Add a Book**
+Add a Book
 curl -X POST http://localhost:5000/books -H "Content-Type: application/json" -H "token: your_jwt_token" -d '{
     "title": "The Alchemist",
     "author": "Paulo Coelho",
