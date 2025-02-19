@@ -19,3 +19,31 @@ PORT=5000
 npm start
 or (for development with auto-reload)
 npm run dev
+
+📌 API Endpoints
+Authentication
+Signup
+
+curl -X POST http://localhost:5000/auth/signup -H "Content-Type: application/json" -d '{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "password123"
+}'
+Login
+curl -X POST http://localhost:5000/auth/login -H "Content-Type: application/json" -d '{
+    "email": "john@example.com",
+    "password": "password123"
+}'
+Books
+**Get All Books**
+curl -X GET http://localhost:5000/books -H "token: your_jwt_token"
+**Add a Book**
+curl -X POST http://localhost:5000/books -H "Content-Type: application/json" -H "token: your_jwt_token" -d '{
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "publishedYear": 1988
+}'
+
+   
+
+
